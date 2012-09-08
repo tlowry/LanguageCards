@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Cartes de langue</title>
+		<link rel="icon" type="image/png" href="images/icon.png" />
+		<link rel="stylesheet" href="css/css3Transitions.css" />
+		<link href='http://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="HeadBar">
+			<div id="aboutButton" class="headBarLeft">
+				About
+			</div>
+			<div id="headBarMain" class="headBarMain">
+				Cartes de langue
+			</div>
+			<div id="instructionsButton" class="headBarRight">
+				Instructions
+			</div>
+		</div>
+
+		<section id="leftArea">
+			<div id="roundClock" class="ClockWidget">
+				<div id="clockText" class="clockText">
+					0
+				</div>
+			</div>
+		</section>
+		<section id="game">
+			<div id="gameHUD">
+				<div id="stageHUD">
+					1
+				</div>
+			</div>
+			<div id="cards">
+
+			</div><!-- END Cards-->
+
+			<div id="FrenchCards">
+
+			</div><!-- END Cards-->
+
+		</section><!--End game-->
+		<div class="bottomBar">
+			This game uses html5 and CSS 3 transitions which may not be supported by your browser <a href="/LanguageCards/references.html">References</a>
+		</div>
+		</div>
+		
+
+		<section id="roundClear">
+			<div id="roundSummary" class="modalWindow">
+				<h1> Your Score !</h1>
+				<div id="roundTime" class="modalItem">
+					<img alt="stopwatch" src="images/time.png" class="lineImage"/><div id="roundTimeText" class="modalItemText"></div>
+				</div>
+				<div id="roundMistakes" class="modalItem">
+					<img alt="cross" src="images/error.png" class="lineImage"/><div id="roundMistakesText" class="modalItemText"></div>
+				</div>
+				<div id="roundScore" class="modalItem">
+					<img alt="cross" src="images/correct.png" class="lineImage"/><div id="roundScoreText" class="modalItemText "></div>
+				</div>
+				<div id="roundSummaryButton" class="modalButton">
+					<div id="closeroundSummaryButtonText" class="modalItemText">
+						OK
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="gameClear">
+			<div id="gameSummary" class="modalWindow">
+				<h1> Congratulations !</h1>
+				<div id="gameTime" class="modalItem">
+					<img alt="stopwatch" src="images/time.png" class="lineImage"/><div id="gameTimeText" class="modalItemText"></div>
+				</div>
+				<div id="gameMistakes" class="modalItem">
+					<img alt="cross" src="images/error.png" class="lineImage"/><div id="gameMistakesText" class="modalItemText"></div>
+				</div>
+				<div id="gameScore" class="modalItem">
+					<img alt="cross" src="images/correct.png" class="lineImage"/><div id="gameScoreText" class="modalItemText "></div>
+				</div>
+				<div id="gameSummaryButton" class="modalButton">
+					<div id="closeGameSummaryButton" class="modalItemText">
+						Again?
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="about">
+			<div id="aboutWindow" class="modalWindow">
+
+				<h1> About This Game</h1>
+				<div id="AboutInfo" class="modalItem">
+					<p>
+						<br />
+						Written by Tony Lowry - 2012.
+						<br/>
+						<br />
+						Uses CSS3 transitions.
+						<br/>
+						<br />
+						Currently fully supported on safari and chrome.
+						<br/>
+						<br />
+					</p>
+				</div>
+
+				<div id="aboutCloseButton" class="modalButton">
+					<div id="closeAboutButtonText" class="modalItemText">
+						OK
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="instructions">
+			<div id="instructionsWindow" class="modalWindow">
+				<h1> Instructions</h1>
+				<div id="InstructionsInfo" class="modalItem">
+					<p>
+						<br />
+						The top section of the playing table will contain cards with pictures.
+						<br/>
+						<br />
+						The lower row contains cards which have French names printed on them
+						<br/>
+						<br />
+						Begin by clicking any of the top picture cards and click again to try to match this to the corresponding
+						<br/>
+						french card on the bottom row.
+						<br/>
+						<br/>
+						<br />
+					</p>
+				</div>
+				<div id="instructionsCloseButton" class="modalButton">
+					<div id="closeInstructionsButtonText" class="modalItemText">
+						OK
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="hidden">
+			<div class="hiddenFrench">
+				<div class="FrenchCard">
+					<div class="face front">
+						<div class="titleBox">
+							?
+						</div>
+					</div>
+					<div class="face back"></div>
+
+				</div>
+			</div>
+			<div class="hiddenCard">
+				<div class="card">
+					<div class="face front"></div>
+					<div class="face back"></div>
+
+				</div><!-- END Cards-->
+			</div>
+		</section>
+
+		<script src="js/jquery-1.7.1.min.js"></script>
+		<script src="js/game.js"></script>
+
+	</body>
+
+</html>
